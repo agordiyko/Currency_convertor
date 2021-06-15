@@ -20,13 +20,13 @@ function displayData(data) {
 }
 
 btnElem.addEventListener("click", () => {
-	let currencyLeft = selectElem[0].value;
-	let currencyRight = selectElem[1].value;
+	const currencyFrom = selectElem[0].value;
+	const currencyTo = selectElem[1].value;
 
-	let value = numbertElem.value;
+	const value = numbertElem.value;
 
-	if (currencyLeft != currencyRight) {
-		convert(currencyLeft, currencyRight, value)
+	if (currencyFrom !== currencyTo) {
+		convert(currencyFrom, currencyTo, value)
 	} else {
 		alert("Выберите различные валюты");
 	}
