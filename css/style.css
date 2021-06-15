@@ -1,0 +1,183 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	min-width: 320px;
+}
+
+body {
+	line-height: 1;
+	font-family: "Montserrat", "Helvetica", sans-serif;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: #fff;
+	background: #333;
+	font-size: 16px;
+}
+
+input,
+button,
+textarea {
+	font-family: "Montserrat", "Helvetica", sans-serif;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+._container {
+	max-width: 650px;
+	margin: 0 auto;
+	background: rgb(102, 102, 102);
+	border-radius: 10px;
+}
+
+.main {
+	padding: 40px;
+}
+.main__title {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+.main__box {
+	width: 100%;
+	display: flex;
+}
+
+.main__left {
+	width: 100%;
+}
+.main__currency {
+	width: 95%;
+	height: 40px;
+	padding: 0 15px;
+	font-size: 16px;
+	cursor: pointer;
+	outline: none;
+	background: #fff;
+	border-radius: 10px;
+	border: none;
+	margin-bottom: 25px;
+}
+.main__input {
+	width: 95%;
+	height: 40px;
+	padding: 0 15px;
+	font-size: 16px;
+	outline: none;
+	border-radius: 10px;
+	border: none;
+	background: rgb(216, 211, 211);
+	margin-bottom: 25px;
+}
+.main__right {
+	width: 100%;
+}
+.main__btn {
+	width: 98%;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	background: rgba(59, 37, 65, 0.533);
+	transition: all 0.5s ease 0s;
+}
+.main__btn:hover {
+	color: rgb(31, 30, 30);
+	background: rgb(38, 88, 88);
+	box-shadow: 0 2px 15px 3px rgba(38, 88, 88, 0.7);
+}
+
+@media (max-width: 540px) {
+	.main__box {
+		flex-direction: column;
+	}
+	.main__title {
+		line-height: 1.5;
+	}
+}
